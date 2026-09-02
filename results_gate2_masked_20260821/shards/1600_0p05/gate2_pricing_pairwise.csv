@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.08122310008794104,0.048834492939090535,0.02734375,0.7
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.21290289542399998,-0.21080778054793325,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,-0.04049254471701854,-0.04663516613010793,0.130859375,0.4
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.18937394844699945,-0.18584585657752234,0.001953125,0.0
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.06435153608544072,-0.06409700800085316,0.009765625,0.2
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.21309288062753814,-0.19656462511660433,0.001953125,0.0
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,0.030273135111637928,0.03140319388917068,0.02734375,0.8
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,0.030273135111637928,0.03140319388917068,0.02734375,0.8
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.23027820985678615,0.22744923761230118,0.001953125,1.0
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.17025261513340562,0.16290868142659445,0.001953125,1.0
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,-0.030273135111637928,-0.03140319388917068,0.02734375,0.2
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,-0.030273135111637928,-0.03140319388917068,0.02734375,0.2
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,0.06002559472338052,0.0563455760766533,0.00390625,0.9
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,0.023858991368422188,0.003363393357297073,0.375,0.6

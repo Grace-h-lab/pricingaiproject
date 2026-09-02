@@ -1,0 +1,12 @@
+{
+ "outdir": "results_minigrid_support_20260825",
+ "seeds": 3,
+ "eval_episodes": 100,
+ "updates": 20000,
+ "dt_epochs": 20,
+ "batch": 256,
+ "lr": 0.001,
+ "max_steps": 200000,
+ "datasets": "expert,random",
+ "smoke": false
+}

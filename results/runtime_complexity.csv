@@ -1,0 +1,5 @@
+method,extra_model,train_aux_s,train_dt_s,train_total_s,inference_ms_per_decision
+Vanilla DT,none,0.001,6.16,6.16,1.051
+Q-DT,Q-value (CQL/FQI),2.93,3.68,6.62,1.013
+Structured DT,demand model,6.01,3.68,9.69,0.897
+Estimate-then-optimize,demand model + planner,3.07,0.001,3.07,0.0

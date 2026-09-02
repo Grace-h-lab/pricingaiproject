@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.1364614052866934,0.1392127346186906,0.048828125,0.7
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.21394451228777944,-0.19033097308115343,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,0.022595903772268916,-0.0009334593870340413,0.4921875,0.5
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.22148420768898047,-0.19942298697741645,0.001953125,0.0
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.03956370943677336,-0.02811663817728427,0.232421875,0.4
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.2318162908601233,-0.20415850997633095,0.001953125,0.0
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,-0.09423418679764378,-0.08639045446417098,0.001953125,0.0
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,-0.09423418679764378,-0.08639045446417098,0.001953125,0.0
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.28419141008110854,0.28312679569627924,0.001953125,1.0
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.11984247211942038,0.11021267659659928,0.005859375,0.9
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,0.09423418679764378,0.08639045446417098,0.001953125,1.0
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,0.09423418679764378,0.08639045446417098,0.001953125,1.0
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,0.16434893796168815,0.17118238023943594,0.001953125,1.0
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,0.062159613209042286,0.027785332563252774,0.16015625,0.7

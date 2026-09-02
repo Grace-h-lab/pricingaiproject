@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "C:\\Users\\grace\\Downloads\\pricing_dt_newdirect_claude\\pricing_dt\\diagnostics\\diag_logger_value.py",
+    "--outdir",
+    "repro_pass3\\logger_value",
+    "--seeds",
+    "10"
+  ],
+  "branch": "master",
+  "commit": "dbe37961aaf9c7d3c0083ab5b13eb2be9b677ed2",
+  "commit_short": "dbe3796",
+  "dirty_files": 86,
+  "env": {
+    "cuda_available": true,
+    "cudnn_deterministic": false,
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "scipy": "1.15.3",
+    "sklearn": "1.8.0",
+    "torch": "2.11.0+cu128"
+  },
+  "utc": "2026-08-27T06:05:32+00:00"
+}

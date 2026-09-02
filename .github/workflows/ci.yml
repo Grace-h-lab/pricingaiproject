@@ -1,0 +1,87 @@
+name: checks
+
+# What this exists to catch, in the order the checks run:
+#   1. code that does not import at all
+#   2. an environment or metric that no longer behaves as specified
+#   3. a reproduction comparator that passes a file it has not actually checked
+#   4. a section pointer or float number in the dissertation that resolves to nothing
+#   5. a headline figure in the text that no longer recomputes from the raw run files
+#   6. a wide entry point that has stopped running end to end
+#
+# Runs on CPU. That is deliberate and is not a reproduction: RUN_GUIDE Step 1 sets out the
+# two reproducibility criteria, and only the same-device one is a cell-level check. Nothing
+# here re-runs an experiment and compares it with the archive; `verify_claims.py` reads the
+# archived CSVs, which are device-independent because they are already on disk.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install (CPU torch, core + test extras)
+        run: |
+          python -m pip install --upgrade pip
+          # the CPU wheel index: the pinned torch has no CUDA tag, and a runner has no GPU
+          pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[test]"
+
+      - name: 1. Everything compiles
+        # dissertation/ holds the prose sources and is absent from the submission package;
+        # compileall prints "Can't list" and still exits 0, so it is named only when present.
+        run: python -m compileall -q pricing_dt tests *.py $([ -d dissertation ] && echo dissertation)
+
+      - name: 2-3. Invariants, and the reproduction comparator
+        # tests/test_smoke.py holds the environment and metric invariants;
+        # tests/test_reproduce_compare.py holds one case per difference the comparator
+        # used to pass: duplicate key, missing column, extra column, NaN against a number,
+        # NaN on both sides, infinity mismatch, missing row, extra row, text difference.
+        run: python -m pytest tests/ -q
+
+      # These read the dissertation's markdown, which the repository carries and the
+      # submission package does not: the package is the code, the document is submitted
+      # separately. Skipped rather than failed where the sources are absent.
+      - name: 4. Cross-references and float numbering in the dissertation
+        run: |
+          if [ -d dissertation ]; then
+            python dissertation/check_refs.py
+            python dissertation/check_numbering.py
+          else
+            echo "no dissertation/ in this tree; document checks skipped"
+          fi
+
+      - name: 5. Every headline figure recomputes from the named raw run files
+        run: python verify_claims.py
+
+      - name: 6. CPU smoke through the documented entry point
+        run: |
+          python run.py --exp e0 --preset smoke --outdir _ci_smoke
+          test -f _ci_smoke/provenance.json || (echo "no provenance written" && exit 1)
+          test -f _ci_smoke/e0_testbed.csv  || (echo "no result written" && exit 1)
+
+      # The bug this catches: the README's opening command died on its own default
+      # directory for an hour, because a provenance record in a second schema was read
+      # as if it were the first. Unit tests of the comparator could not see it; only
+      # running the documented command could.
+      - name: 7. The commands the README actually tells a reader to run
+        run: |
+          python verify_claims.py
+          python reproduce.py --verify --no-figures
+          python compare_passes.py repro_20260827 repro_pass2 repro_pass3 repro_pass4
+
+      - name: Provenance of this check
+        if: always()
+        run: cat _ci_smoke/provenance.json || true

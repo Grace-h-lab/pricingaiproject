@@ -1,0 +1,35 @@
+{
+  "argv": [
+    "C:\\Users\\grace\\Downloads\\pricing_dt_newdirect_claude\\pricing_dt\\diagnostics\\diag_expertq_sweep.py",
+    "--outdir",
+    "repro_pass3\\expertq_channel",
+    "--expert-q",
+    "0.0,0.25,0.5,0.75,1.0",
+    "--sizes",
+    "100,400,1600",
+    "--noise",
+    "0.5",
+    "--seeds",
+    "3",
+    "--topk",
+    "3",
+    "--with-dt"
+  ],
+  "branch": "master",
+  "commit": "dbe37961aaf9c7d3c0083ab5b13eb2be9b677ed2",
+  "commit_short": "dbe3796",
+  "dirty_files": 89,
+  "env": {
+    "cuda_available": true,
+    "cudnn_deterministic": false,
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "scipy": "1.15.3",
+    "sklearn": "1.8.0",
+    "torch": "2.11.0+cu128"
+  },
+  "utc": "2026-08-27T06:53:45+00:00"
+}

@@ -1,0 +1,7 @@
+arm,margin_heldout,beat_heldout,margin_default,beat_default
+structuredDT,-2.106,0.398,-2.717,0.377
+QDT_td,-2.979,0.33,-7.41,0.257
+QDT_qsa,-5.437,0.37,-6.228,0.35
+vanillaDT,-8.196,0.257,-15.143,0.162
+oracle_Qstar,-8.955,0.27,-19.299,0.121
+QDT_legacy,-11.069,0.27,-16.567,0.214

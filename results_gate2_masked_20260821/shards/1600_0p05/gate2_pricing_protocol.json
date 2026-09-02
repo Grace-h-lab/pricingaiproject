@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-14",
+  "stage": "Gate 2 pricing-MDP diagnostics, corrected mainline",
+  "preset": "full",
+  "cells": [
+    [
+      1600,
+      0.05
+    ]
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "methods": [
+    "Structured DT",
+    "Structured DT support count>=1",
+    "Structured DT support top3",
+    "Vanilla DT",
+    "Vanilla DT support top3",
+    "Q-DT fixed td denoised",
+    "Q-DT fixed td denoised support top3",
+    "Q-DT fixed q_sa",
+    "Q-DT fixed q_sa support top3",
+    "IQL expectile0.7 beta3",
+    "IQL expectile0.7 beta3 support top3"
+  ],
+  "qdt_note": "Q-DT targets use qdt.value_relabel with action-dependent modes td and q_sa. The legacy state_value target is intentionally absent from this mainline runner.",
+  "qdt_config": {
+    "cql_updates": 2000,
+    "cql_alpha": 0.1,
+    "lr": 0.0003,
+    "q_hidden": 128
+  },
+  "iql_config": {
+    "updates": 2000,
+    "expectile": 0.7,
+    "awr_beta": 3.0,
+    "weight_clip": 20.0,
+    "lr": 0.0003
+  },
+  "support_masks": [
+    "count>=1 keeps actions observed in the same timestep/reference-bin cell",
+    "top3 keeps up to three most observed actions in that cell",
+    "top3 is applied to EVERY family (structured, vanilla, Q-DT, IQL) at inference only, so target choice and support constraint are crossed rather than confounded"
+  ]
+}

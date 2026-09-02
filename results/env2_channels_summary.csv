@@ -1,0 +1,7 @@
+,mean,std
+QDT,0.382,0.177
+vanilla,0.311,0.202
+BC,0.307,0.174
+oracle,0.22,0.3
+structured,0.169,0.321
+empirical,-0.044,0.4

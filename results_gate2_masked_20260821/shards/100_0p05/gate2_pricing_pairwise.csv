@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.14513825607365383,0.08951782215634146,0.10546875,0.8
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.21749024069130404,-0.21948477841586822,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,0.12182992579088237,0.12624761995004685,0.013671875,0.9
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.13794713899693228,-0.15904324426466027,0.009765625,0.1
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.005781691555922836,0.020004168742442735,0.845703125,0.6
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.08459122104303879,-0.09480781887842532,0.02734375,0.2
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,-0.08704718744992868,-0.08271897140408946,0.001953125,0.0
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,-0.08704718744992868,-0.08271897140408946,0.001953125,0.0
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.23008991489884897,0.2322077410281212,0.005859375,0.9
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.10303889171132337,0.11825003718605623,0.009765625,0.8
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,0.08704718744992868,0.08271897140408946,0.001953125,1.0
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,0.08704718744992868,0.08271897140408946,0.001953125,1.0
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,0.12705102318752565,0.07498216659400589,0.001953125,1.0
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,0.1276116173468052,0.161749801014919,0.013671875,0.8

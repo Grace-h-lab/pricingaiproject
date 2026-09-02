@@ -1,0 +1,92 @@
+
+==============================================================================
+MASK = top3
+==============================================================================
+
+--- logger: expert
+  mean admissible-set size      3.00 of 7
+  sd across learners, bare      0.0596
+  sd across learners, masked    0.0596
+  COMPRESSION (bare/masked)     1.00x (median)   per-seed [1. 1. 1.]
+  Spearman(off-support, gain)   undefined (no variation in gain)   per-seed [nan nan nan]
+  no-learner floor  bare 0.0227 -> masked 0.0466
+  best learner masked           0.4401
+  per-arm:
+    BC                   bare +0.3346 -> masked +0.3346   gain +0.0000   off-support 0.000
+    CQL                  bare +0.3717 -> masked +0.3717   gain +0.0000   off-support 0.000
+    IQL                  bare +0.3038 -> masked +0.3038   gain +0.0000   off-support 0.000
+    DT                   bare +0.4401 -> masked +0.4401   gain +0.0000   off-support 0.000
+    Q-DT                 bare +0.4002 -> masked +0.4002   gain +0.0000   off-support 0.000
+    random (no learner)  bare +0.0227 -> masked +0.0466   gain +0.0239   off-support 0.570
+
+--- logger: random
+  mean admissible-set size      3.00 of 7
+  sd across learners, bare      0.0125
+  sd across learners, masked    0.0043
+  COMPRESSION (bare/masked)     2.09x (median)   per-seed [2.25  nan 1.94]
+  Spearman(off-support, gain)   -0.701   per-seed [-0.45 -0.95 -0.71]
+  no-learner floor  bare 0.0227 -> masked 0.0061
+  best learner masked           0.0096
+  per-arm:
+    BC                   bare +0.0033 -> masked +0.0033   gain +0.0000   off-support 0.000
+    CQL                  bare +0.0000 -> masked +0.0000   gain +0.0000   off-support 0.276
+    IQL                  bare +0.0097 -> masked +0.0032   gain -0.0065   off-support 0.251
+    DT                   bare +0.0274 -> masked +0.0064   gain -0.0210   off-support 0.550
+    Q-DT                 bare +0.0033 -> masked +0.0000   gain -0.0033   off-support 0.434
+    random (no learner)  bare +0.0227 -> masked +0.0061   gain -0.0166   off-support 0.572
+
+==============================================================================
+MASK = bcq_tau
+==============================================================================
+
+--- logger: expert
+  mean admissible-set size      1.47 of 7
+  sd across learners, bare      0.0596
+  sd across learners, masked    0.0466
+  COMPRESSION (bare/masked)     1.17x (median)   per-seed [1.17 0.72 1.94]
+  Spearman(off-support, gain)   +0.000   per-seed [ 0.   0.7 -0.7]
+  no-learner floor  bare 0.0227 -> masked 0.4153
+  best learner masked           0.4141
+  per-arm:
+    BC                   bare +0.3346 -> masked +0.3346   gain +0.0000   off-support 0.000
+    CQL                  bare +0.3717 -> masked +0.3730   gain +0.0013   off-support 0.024
+    IQL                  bare +0.3038 -> masked +0.3130   gain +0.0092   off-support 0.051
+    DT                   bare +0.4401 -> masked +0.4141   gain -0.0261   off-support 0.197
+    Q-DT                 bare +0.4002 -> masked +0.3955   gain -0.0047   off-support 0.196
+    random (no learner)  bare +0.0227 -> masked +0.4153   gain +0.3926   off-support 0.813
+
+--- logger: random
+  mean admissible-set size      7.00 of 7
+  sd across learners, bare      0.0125
+  sd across learners, masked    0.0125
+  COMPRESSION (bare/masked)     1.00x (median)   per-seed [1. 1. 1.]
+  Spearman(off-support, gain)   undefined (no variation in gain)   per-seed [nan nan nan]
+  no-learner floor  bare 0.0227 -> masked 0.0209
+  best learner masked           0.0284
+  per-arm:
+    BC                   bare +0.0033 -> masked +0.0033   gain +0.0000   off-support 0.000
+    CQL                  bare +0.0000 -> masked +0.0000   gain +0.0000   off-support 0.000
+    IQL                  bare +0.0097 -> masked +0.0097   gain +0.0000   off-support 0.000
+    DT                   bare +0.0274 -> masked +0.0274   gain +0.0000   off-support 0.000
+    Q-DT                 bare +0.0033 -> masked +0.0033   gain +0.0000   off-support 0.000
+    random (no learner)  bare +0.0227 -> masked +0.0209   gain -0.0017   off-support 0.000
+
+==============================================================================
+PRE-REGISTERED DECISION RULE
+==============================================================================
+
+  mask = top3
+    P1 compression > 1 (expert)            REFUTED   (1.00x)
+    P2 Spearman(off-support, gain) > 0     REFUTED   (undefined)
+    P3 compression smaller under random    REFUTED   (2.09x vs 1.00x)
+    P4 floor higher under expert logger    HOLDS   (0.0466 vs 0.0061)
+    => contraction result does not generalise beyond E1/E2; restrict the claim by name
+
+  mask = bcq_tau
+    P1 compression > 1 (expert)            HOLDS   (1.17x)
+    P2 Spearman(off-support, gain) > 0     REFUTED   (0.00)
+    P3 compression smaller under random    HOLDS   (1.00x vs 1.17x)
+    P4 floor higher under expert logger    HOLDS   (0.4153 vs 0.0209)
+    => contraction result does not generalise beyond E1/E2; restrict the claim by name
+
+  n = 3 training seeds: these are directional outcomes against pre-declared predictions, not significance tests.

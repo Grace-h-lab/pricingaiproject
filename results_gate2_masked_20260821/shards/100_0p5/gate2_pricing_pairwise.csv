@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.17917526011754323,0.1218084321275609,0.01953125,0.9
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.2142836195588073,-0.2165682015948996,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,0.11761607738073779,0.10924610954865038,0.001953125,1.0
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.14060935593463508,-0.1732251047064764,0.005859375,0.1
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.017105313054298594,-0.03785691654464041,0.431640625,0.4
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.09669241785814398,-0.08498549603061067,0.064453125,0.2
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,-0.10264909117955923,-0.08054581901307162,0.001953125,0.0
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,-0.10264909117955923,-0.08054581901307162,0.001953125,0.0
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.1516207751213609,0.1700746139450321,0.009765625,0.9
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.09227639180775873,0.11045191057985845,0.009765625,0.9
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,0.10264909117955923,0.08054581901307162,0.001953125,1.0
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,0.10264909117955923,0.08054581901307162,0.001953125,1.0
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,0.059344383313602166,0.07354716681167021,0.048828125,0.7
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,0.1347213904350364,0.14721729057747787,0.01953125,0.9

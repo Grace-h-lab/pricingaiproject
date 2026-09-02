@@ -1,0 +1,28 @@
+{
+  "record_status": "OVERWRITTEN -- this is not a machine-collected record",
+  "what_happened": "reproduce.py stamped provenance before it decided whether it had been asked to run or only to verify, and repro_20260827 was the default --outroot. A later `reproduce.py --verify`, which re-diffs files already on disk and produces no new numbers, therefore replaced this directory's record with its own. The original machine record of the 2026-08-27 pass is lost: it was never committed, so it cannot be restored from version control.",
+  "fixed_in_code": "reproduce.py now stamps only on the branch that writes files, and provenance.stamp() refuses to replace an existing record unless called with replace=True.",
+  "recovered_from_document": {
+    "note": "These values are transcribed from REPRODUCE.md, which recorded the pass in prose at the time. They are a written account, not a machine stamp, and are labelled as such so that nothing here can be mistaken for collected evidence.",
+    "source": "REPRODUCE.md, section 'Results of this pass'",
+    "date": "2026-08-27",
+    "commit_short": "dbe3796",
+    "dirty_files": 82,
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "scipy": "1.15.3"
+  },
+  "overwriting_event": {
+    "note": "What the destroyed record was replaced by. Kept so the loss is auditable rather than silent.",
+    "argv": ["reproduce.py", "--verify"],
+    "utc": "2026-08-31T09:17:42+00:00",
+    "commit_short": "dbe3796",
+    "dirty_files": 141,
+    "device": "cpu",
+    "torch": "2.11.0+cpu",
+    "what_it_did": "Re-diffed the CSVs already in this directory against the archive. It ran no experiment and produced no number, so the results here remain the GPU output of 2026-08-27; only the record of them was replaced."
+  },
+  "reproduce_summary_json": "Also written by the verify run above, and therefore carries its return codes rather than the original pass's. The diff outcome it reports is over the same files either way.",
+  "passes_with_intact_records": ["repro_pass2", "repro_pass3", "repro_pass4"]
+}

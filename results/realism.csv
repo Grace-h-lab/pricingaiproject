@@ -1,0 +1,8 @@
+metric,value
+n_train_episodes,1680
+n_test_episodes,541
+demand_curve_monotone_in_price,True
+OPE_value_logged_policy(test),0.377
+OPE_value_vanillaDT,0.683
+OPE_value_BC,0.188
+OPE_uplift_DT_over_logged,0.306

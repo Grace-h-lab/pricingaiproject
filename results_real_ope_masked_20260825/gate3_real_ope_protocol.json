@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-27",
+  "stage": "Gate 3A real-data OPE sensitivity",
+  "preset": "full",
+  "real_data": "online_retail_II.xlsx",
+  "n_rows_after_cleaning": 1041670,
+  "n_train_episodes": 1680,
+  "n_test_episodes": 541,
+  "n_prices": 11,
+  "horizon": 8,
+  "clips": [
+    1.0,
+    3.0,
+    10.0,
+    30.0
+  ],
+  "n_boot": 500,
+  "bootstrap_note": "Fixed-nuisance bootstrap over held-out episodes.",
+  "source_note": "Online Retail II has no ground-truth counterfactual policy value; these estimates are sensitivity diagnostics, not headline evidence."
+}

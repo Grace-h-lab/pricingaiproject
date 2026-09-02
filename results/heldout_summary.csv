@@ -1,0 +1,10 @@
+arm,heldout,sd,default_rule,test_best,transfer_loss
+action_deleted,0.705,0.128,0.678,0.73,0.026
+filtBC_keep0.5,0.704,0.063,0.704,0.704,0.0
+A_structured,0.681,0.087,0.668,0.709,0.028
+QDT_td,0.665,0.034,0.584,0.687,0.022
+QDT_qsa,0.622,0.064,0.608,0.664,0.042
+vanilla,0.573,0.12,0.448,0.605,0.032
+oracle_Qstar,0.556,0.101,0.374,0.574,0.018
+potential_exact,0.554,0.096,0.375,0.569,0.015
+B_unconstrained,0.518,0.097,0.327,0.549,0.031

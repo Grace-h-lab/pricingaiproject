@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.1169692881394458,0.10458941166243174,0.10546875,0.7
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.19966206387015206,-0.2067296335058207,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,0.09273346475722419,0.07983935447764334,0.083984375,0.6
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.19854055357839123,-0.18885831014376425,0.001953125,0.0
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.01588526233266522,-0.04526694240652168,0.556640625,0.4
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.21020470030213012,-0.1995767425990876,0.001953125,0.0
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,-0.09813891726372329,-0.0956022348503246,0.001953125,0.0
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,-0.09813891726372329,-0.0956022348503246,0.001953125,0.0
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.15955684138949824,0.16349998065289584,0.001953125,1.0
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.1452745944938108,0.14178543681296119,0.001953125,1.0
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,0.09813891726372329,0.0956022348503246,0.001953125,1.0
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,0.09813891726372329,0.0956022348503246,0.001953125,1.0
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,0.014282246895687394,0.01578716287826898,0.10546875,0.7
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,0.10861872708988943,0.04580632567801601,0.02734375,0.9

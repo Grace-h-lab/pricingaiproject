@@ -1,0 +1,361 @@
+seed,arm,target_rule,target,nv,is_default
+0,A_structured,q0.5,355.6,-0.86,False
+0,A_structured,q0.75,528.9,0.055,False
+0,A_structured,q0.9,658.3,0.572,False
+0,A_structured,q0.95,739.2,0.609,True
+0,A_structured,q0.99,908.4,0.513,False
+0,A_structured,q1.0,959.1,0.513,False
+0,A_structured,max x1.25,1198.9,-0.075,False
+0,A_structured,max x1.5,1438.7,-0.561,False
+0,A_structured,max x2.0,1918.2,-0.623,False
+0,QDT_td,q0.5,5228.1,-0.232,False
+0,QDT_td,q0.75,6084.5,0.636,False
+0,QDT_td,q0.9,6416.0,0.641,False
+0,QDT_td,q0.95,6652.5,0.662,True
+0,QDT_td,q0.99,6956.3,0.664,False
+0,QDT_td,q1.0,7240.3,0.652,False
+0,QDT_td,max x1.25,9050.3,0.513,False
+0,QDT_td,max x1.5,10860.4,0.513,False
+0,QDT_td,max x2.0,14480.5,0.358,False
+0,oracle_Qstar,q0.5,273.8,-0.86,False
+0,oracle_Qstar,q0.75,364.9,-0.391,False
+0,oracle_Qstar,q0.9,448.4,0.193,False
+0,oracle_Qstar,q0.95,505.4,0.594,True
+0,oracle_Qstar,q0.99,564.2,0.648,False
+0,oracle_Qstar,q1.0,574.8,0.638,False
+0,oracle_Qstar,max x1.25,718.5,0.644,False
+0,oracle_Qstar,max x1.5,862.2,0.607,False
+0,oracle_Qstar,max x2.0,1149.7,0.473,False
+0,vanilla,q0.5,278.6,-0.431,False
+0,vanilla,q0.75,402.0,0.167,False
+0,vanilla,q0.9,499.5,0.634,False
+0,vanilla,q0.95,562.1,0.619,True
+0,vanilla,q0.99,673.5,0.641,False
+0,vanilla,q1.0,849.7,0.669,False
+0,vanilla,max x1.25,1062.2,0.652,False
+0,vanilla,max x1.5,1274.6,0.638,False
+0,vanilla,max x2.0,1699.5,0.604,False
+1,A_structured,q0.5,320.5,-0.723,False
+1,A_structured,q0.75,470.0,-0.067,False
+1,A_structured,q0.9,585.3,0.366,False
+1,A_structured,q0.95,668.6,0.599,True
+1,A_structured,q0.99,845.3,0.484,False
+1,A_structured,q1.0,888.8,0.153,False
+1,A_structured,max x1.25,1110.9,-0.121,False
+1,A_structured,max x1.5,1333.1,-0.305,False
+1,A_structured,max x2.0,1777.5,-0.399,False
+1,QDT_td,q0.5,9256.4,0.21,False
+1,QDT_td,q0.75,10403.7,0.563,False
+1,QDT_td,q0.9,11068.4,0.687,False
+1,QDT_td,q0.95,11393.9,0.671,True
+1,QDT_td,q0.99,12046.6,0.65,False
+1,QDT_td,q1.0,12089.0,0.65,False
+1,QDT_td,max x1.25,15111.2,0.265,False
+1,QDT_td,max x1.5,18133.5,-0.744,False
+1,QDT_td,max x2.0,24178.0,-0.515,False
+1,oracle_Qstar,q0.5,262.8,-0.559,False
+1,oracle_Qstar,q0.75,371.9,-0.079,False
+1,oracle_Qstar,q0.9,445.4,0.375,False
+1,oracle_Qstar,q0.95,476.1,0.387,True
+1,oracle_Qstar,q0.99,564.2,0.433,False
+1,oracle_Qstar,q1.0,574.8,0.451,False
+1,oracle_Qstar,max x1.25,718.5,0.495,False
+1,oracle_Qstar,max x1.5,862.2,0.532,False
+1,oracle_Qstar,max x2.0,1149.7,0.619,False
+1,vanilla,q0.5,263.8,-0.027,False
+1,vanilla,q0.75,389.2,0.262,False
+1,vanilla,q0.9,504.4,0.395,False
+1,vanilla,q0.95,585.3,0.453,True
+1,vanilla,q0.99,714.0,0.473,False
+1,vanilla,q1.0,1026.0,0.661,False
+1,vanilla,max x1.25,1282.5,0.7,False
+1,vanilla,max x1.5,1539.0,0.687,False
+1,vanilla,max x2.0,2052.0,0.672,False
+2,A_structured,q0.5,353.2,-0.518,False
+2,A_structured,q0.75,511.3,-0.067,False
+2,A_structured,q0.9,643.7,0.382,False
+2,A_structured,q0.95,718.5,0.675,True
+2,A_structured,q0.99,912.9,0.619,False
+2,A_structured,q1.0,967.7,0.449,False
+2,A_structured,max x1.25,1209.7,0.39,False
+2,A_structured,max x1.5,1451.6,0.144,False
+2,A_structured,max x2.0,1935.5,0.153,False
+2,QDT_td,q0.5,6231.9,-0.243,False
+2,QDT_td,q0.75,7266.6,0.408,False
+2,QDT_td,q0.9,7714.9,0.383,False
+2,QDT_td,q0.95,8077.8,0.407,True
+2,QDT_td,q0.99,8463.6,0.407,False
+2,QDT_td,q1.0,8917.3,0.414,False
+2,QDT_td,max x1.25,11146.6,0.637,False
+2,QDT_td,max x1.5,13375.9,0.669,False
+2,QDT_td,max x2.0,17834.6,0.639,False
+2,oracle_Qstar,q0.5,262.8,-0.451,False
+2,oracle_Qstar,q0.75,371.9,0.084,False
+2,oracle_Qstar,q0.9,449.2,0.367,False
+2,oracle_Qstar,q0.95,500.6,0.403,True
+2,oracle_Qstar,q0.99,564.2,0.424,False
+2,oracle_Qstar,q1.0,574.8,0.424,False
+2,oracle_Qstar,max x1.25,718.5,0.422,False
+2,oracle_Qstar,max x1.5,862.2,0.413,False
+2,oracle_Qstar,max x2.0,1149.7,0.392,False
+2,vanilla,q0.5,272.6,0.085,False
+2,vanilla,q0.75,401.0,0.269,False
+2,vanilla,q0.9,502.7,0.385,False
+2,vanilla,q0.95,565.9,0.395,True
+2,vanilla,q0.99,707.1,0.416,False
+2,vanilla,q1.0,1027.9,0.422,False
+2,vanilla,max x1.25,1284.9,0.416,False
+2,vanilla,max x1.5,1541.9,0.413,False
+2,vanilla,max x2.0,2055.9,0.402,False
+3,A_structured,q0.5,327.6,-0.786,False
+3,A_structured,q0.75,508.2,0.145,False
+3,A_structured,q0.9,646.6,0.38,False
+3,A_structured,q0.95,749.1,0.797,True
+3,A_structured,q0.99,953.9,0.699,False
+3,A_structured,q1.0,1003.3,0.5,False
+3,A_structured,max x1.25,1254.1,-0.206,False
+3,A_structured,max x1.5,1504.9,-0.463,False
+3,A_structured,max x2.0,2006.5,-0.5,False
+3,QDT_td,q0.5,8533.6,-0.158,False
+3,QDT_td,q0.75,9921.6,0.357,False
+3,QDT_td,q0.9,10552.0,0.409,False
+3,QDT_td,q0.95,10930.2,0.409,True
+3,QDT_td,q0.99,11423.5,0.541,False
+3,QDT_td,q1.0,11638.6,0.574,False
+3,QDT_td,max x1.25,14548.3,0.643,False
+3,QDT_td,max x1.5,17457.9,0.321,False
+3,QDT_td,max x2.0,23277.2,0.047,False
+3,oracle_Qstar,q0.5,262.8,-0.786,False
+3,oracle_Qstar,q0.75,364.9,-0.206,False
+3,oracle_Qstar,q0.9,448.4,0.38,False
+3,oracle_Qstar,q0.95,505.4,0.428,True
+3,oracle_Qstar,q0.99,564.2,0.429,False
+3,oracle_Qstar,q1.0,574.8,0.427,False
+3,oracle_Qstar,max x1.25,718.5,0.39,False
+3,oracle_Qstar,max x1.5,862.2,0.332,False
+3,oracle_Qstar,max x2.0,1149.7,0.109,False
+3,vanilla,q0.5,269.4,-0.701,False
+3,vanilla,q0.75,397.7,0.142,False
+3,vanilla,q0.9,531.0,0.38,False
+3,vanilla,q0.95,601.8,0.417,True
+3,vanilla,q0.99,731.4,0.43,False
+3,vanilla,q1.0,1019.1,0.427,False
+3,vanilla,max x1.25,1273.9,0.427,False
+3,vanilla,max x1.5,1528.7,0.416,False
+3,vanilla,max x2.0,2038.2,0.416,False
+4,A_structured,q0.5,320.6,-0.833,False
+4,A_structured,q0.75,486.5,-0.117,False
+4,A_structured,q0.9,588.9,0.22,False
+4,A_structured,q0.95,686.9,0.636,True
+4,A_structured,q0.99,865.4,0.507,False
+4,A_structured,q1.0,966.6,0.193,False
+4,A_structured,max x1.25,1208.2,-0.276,False
+4,A_structured,max x1.5,1449.9,-0.263,False
+4,A_structured,max x2.0,1933.2,-0.263,False
+4,QDT_td,q0.5,5937.1,-0.515,False
+4,QDT_td,q0.75,6888.9,0.188,False
+4,QDT_td,q0.9,7514.8,0.661,False
+4,QDT_td,q0.95,7730.1,0.682,True
+4,QDT_td,q0.99,8189.5,0.661,False
+4,QDT_td,q1.0,8550.2,0.58,False
+4,QDT_td,max x1.25,10687.7,-0.109,False
+4,QDT_td,max x1.5,12825.2,-0.276,False
+4,QDT_td,max x2.0,17100.3,-0.263,False
+4,oracle_Qstar,q0.5,260.7,-0.504,False
+4,oracle_Qstar,q0.75,364.9,-0.353,False
+4,oracle_Qstar,q0.9,430.5,-0.192,False
+4,oracle_Qstar,q0.95,474.6,0.208,True
+4,oracle_Qstar,q0.99,551.2,0.397,False
+4,oracle_Qstar,q1.0,574.8,0.47,False
+4,oracle_Qstar,max x1.25,718.5,0.673,False
+4,oracle_Qstar,max x1.5,862.2,0.583,False
+4,oracle_Qstar,max x2.0,1149.7,0.452,False
+4,vanilla,q0.5,262.5,-0.359,False
+4,vanilla,q0.75,378.1,0.115,False
+4,vanilla,q0.9,487.7,0.348,False
+4,vanilla,q0.95,572.2,0.475,True
+4,vanilla,q0.99,745.6,0.601,False
+4,vanilla,q1.0,980.1,0.585,False
+4,vanilla,max x1.25,1225.1,0.58,False
+4,vanilla,max x1.5,1470.2,0.591,False
+4,vanilla,max x2.0,1960.2,0.567,False
+5,A_structured,q0.5,296.6,-0.623,False
+5,A_structured,q0.75,487.5,-0.151,False
+5,A_structured,q0.9,644.7,0.57,False
+5,A_structured,q0.95,701.2,0.667,True
+5,A_structured,q0.99,876.7,0.807,False
+5,A_structured,q1.0,966.2,0.585,False
+5,A_structured,max x1.25,1207.8,-0.197,False
+5,A_structured,max x1.5,1449.4,-0.424,False
+5,A_structured,max x2.0,1932.5,-0.563,False
+5,QDT_td,q0.5,6072.2,-0.35,False
+5,QDT_td,q0.75,7227.6,0.316,False
+5,QDT_td,q0.9,7820.5,0.597,False
+5,QDT_td,q0.95,8106.3,0.451,True
+5,QDT_td,q0.99,8646.0,0.641,False
+5,QDT_td,q1.0,8982.9,0.728,False
+5,QDT_td,max x1.25,11228.7,-0.065,False
+5,QDT_td,max x1.5,13474.4,-0.309,False
+5,QDT_td,max x2.0,17965.9,-0.404,False
+5,oracle_Qstar,q0.5,257.7,-0.117,False
+5,oracle_Qstar,q0.75,364.9,0.301,False
+5,oracle_Qstar,q0.9,443.7,0.36,False
+5,oracle_Qstar,q0.95,472.5,0.381,True
+5,oracle_Qstar,q0.99,551.2,0.478,False
+5,oracle_Qstar,q1.0,574.8,0.519,False
+5,oracle_Qstar,max x1.25,718.5,0.539,False
+5,oracle_Qstar,max x1.5,862.2,0.563,False
+5,oracle_Qstar,max x2.0,1149.7,0.591,False
+5,vanilla,q0.5,265.1,0.222,False
+5,vanilla,q0.75,411.2,0.338,False
+5,vanilla,q0.9,530.4,0.401,False
+5,vanilla,q0.95,620.6,0.414,True
+5,vanilla,q0.99,724.0,0.425,False
+5,vanilla,q1.0,903.3,0.56,False
+5,vanilla,max x1.25,1129.1,0.56,False
+5,vanilla,max x1.5,1354.9,0.611,False
+5,vanilla,max x2.0,1806.5,0.659,False
+6,A_structured,q0.5,313.5,-0.882,False
+6,A_structured,q0.75,512.8,-0.064,False
+6,A_structured,q0.9,660.7,0.574,False
+6,A_structured,q0.95,739.5,0.697,True
+6,A_structured,q0.99,876.8,0.512,False
+6,A_structured,q1.0,1010.8,0.205,False
+6,A_structured,max x1.25,1263.5,0.127,False
+6,A_structured,max x1.5,1516.2,0.127,False
+6,A_structured,max x2.0,2021.6,0.127,False
+6,QDT_td,q0.5,6197.2,-0.547,False
+6,QDT_td,q0.75,7249.0,0.344,False
+6,QDT_td,q0.9,7960.0,0.516,False
+6,QDT_td,q0.95,8200.0,0.574,True
+6,QDT_td,q0.99,8655.8,0.676,False
+6,QDT_td,q1.0,9082.2,0.732,False
+6,QDT_td,max x1.25,11352.7,0.328,False
+6,QDT_td,max x1.5,13623.3,0.211,False
+6,QDT_td,max x2.0,18164.3,0.173,False
+6,oracle_Qstar,q0.5,256.8,-0.882,False
+6,oracle_Qstar,q0.75,364.9,-0.398,False
+6,oracle_Qstar,q0.9,430.5,0.324,False
+6,oracle_Qstar,q0.95,474.6,0.436,True
+6,oracle_Qstar,q0.99,536.9,0.545,False
+6,oracle_Qstar,q1.0,568.3,0.56,False
+6,oracle_Qstar,max x1.25,710.4,0.488,False
+6,oracle_Qstar,max x1.5,852.5,0.546,False
+6,oracle_Qstar,max x2.0,1136.7,0.509,False
+6,vanilla,q0.5,269.5,-0.201,False
+6,vanilla,q0.75,387.8,0.093,False
+6,vanilla,q0.9,502.8,0.542,False
+6,vanilla,q0.95,562.5,0.552,True
+6,vanilla,q0.99,707.2,0.664,False
+6,vanilla,q1.0,903.7,0.65,False
+6,vanilla,max x1.25,1129.6,0.65,False
+6,vanilla,max x1.5,1355.5,0.643,False
+6,vanilla,max x2.0,1807.4,0.642,False
+7,A_structured,q0.5,294.9,-0.845,False
+7,A_structured,q0.75,466.0,-0.266,False
+7,A_structured,q0.9,574.2,0.385,False
+7,A_structured,q0.95,656.2,0.612,True
+7,A_structured,q0.99,761.2,0.577,False
+7,A_structured,q1.0,878.0,0.523,False
+7,A_structured,max x1.25,1097.4,0.08,False
+7,A_structured,max x1.5,1316.9,0.005,False
+7,A_structured,max x2.0,1755.9,-0.192,False
+7,QDT_td,q0.5,5323.8,-0.59,False
+7,QDT_td,q0.75,6513.1,0.145,False
+7,QDT_td,q0.9,7235.1,0.556,False
+7,QDT_td,q0.95,7531.0,0.645,True
+7,QDT_td,q0.99,7881.4,0.65,False
+7,QDT_td,q1.0,8241.6,0.669,False
+7,QDT_td,max x1.25,10302.0,0.298,False
+7,QDT_td,max x1.5,12362.4,-0.221,False
+7,QDT_td,max x2.0,16483.2,-0.192,False
+7,oracle_Qstar,q0.5,256.8,-0.845,False
+7,oracle_Qstar,q0.75,361.3,-0.597,False
+7,oracle_Qstar,q0.9,444.8,-0.104,False
+7,oracle_Qstar,q0.95,477.7,0.097,True
+7,oracle_Qstar,q0.99,551.1,0.412,False
+7,oracle_Qstar,q1.0,574.8,0.411,False
+7,oracle_Qstar,max x1.25,718.5,0.547,False
+7,oracle_Qstar,max x1.5,862.2,0.296,False
+7,oracle_Qstar,max x2.0,1149.7,0.199,False
+7,vanilla,q0.5,254.6,-0.413,False
+7,vanilla,q0.75,374.9,-0.106,False
+7,vanilla,q0.9,481.6,0.051,False
+7,vanilla,q0.95,548.6,0.091,True
+7,vanilla,q0.99,668.3,0.318,False
+7,vanilla,q1.0,816.1,0.462,False
+7,vanilla,max x1.25,1020.1,0.529,False
+7,vanilla,max x1.5,1224.1,0.526,False
+7,vanilla,max x2.0,1632.1,0.553,False
+8,A_structured,q0.5,341.4,-0.73,False
+8,A_structured,q0.75,500.0,-0.283,False
+8,A_structured,q0.9,604.3,0.307,False
+8,A_structured,q0.95,715.0,0.683,True
+8,A_structured,q0.99,836.7,0.624,False
+8,A_structured,q1.0,966.7,0.421,False
+8,A_structured,max x1.25,1208.4,-0.016,False
+8,A_structured,max x1.5,1450.1,-0.016,False
+8,A_structured,max x2.0,1933.4,-0.016,False
+8,QDT_td,q0.5,7294.2,-0.344,False
+8,QDT_td,q0.75,8356.4,0.547,False
+8,QDT_td,q0.9,8838.3,0.647,False
+8,QDT_td,q0.95,9052.9,0.665,True
+8,QDT_td,q0.99,9542.4,0.664,False
+8,QDT_td,q1.0,9716.9,0.665,False
+8,QDT_td,max x1.25,12146.2,0.346,False
+8,QDT_td,max x1.5,14575.4,0.206,False
+8,QDT_td,max x2.0,19433.9,0.145,False
+8,oracle_Qstar,q0.5,258.7,-0.412,False
+8,oracle_Qstar,q0.75,364.9,-0.022,False
+8,oracle_Qstar,q0.9,431.8,0.153,False
+8,oracle_Qstar,q0.95,468.5,0.456,True
+8,oracle_Qstar,q0.99,551.2,0.574,False
+8,oracle_Qstar,q1.0,574.8,0.579,False
+8,oracle_Qstar,max x1.25,718.5,0.471,False
+8,oracle_Qstar,max x1.5,862.2,0.371,False
+8,oracle_Qstar,max x2.0,1149.7,0.281,False
+8,vanilla,q0.5,268.2,0.004,False
+8,vanilla,q0.75,387.9,0.166,False
+8,vanilla,q0.9,483.5,0.401,False
+8,vanilla,q0.95,540.4,0.457,True
+8,vanilla,q0.99,728.4,0.601,False
+8,vanilla,q1.0,1026.4,0.489,False
+8,vanilla,max x1.25,1283.0,0.489,False
+8,vanilla,max x1.5,1539.7,0.476,False
+8,vanilla,max x2.0,2052.9,0.476,False
+9,A_structured,q0.5,349.8,-0.602,False
+9,A_structured,q0.75,520.7,-0.038,False
+9,A_structured,q0.9,668.3,0.515,False
+9,A_structured,q0.95,757.4,0.723,True
+9,A_structured,q0.99,961.9,0.365,False
+9,A_structured,q1.0,1053.7,-0.448,False
+9,A_structured,max x1.25,1317.1,-0.474,False
+9,A_structured,max x1.5,1580.6,-0.685,False
+9,A_structured,max x2.0,2107.4,-0.752,False
+9,QDT_td,q0.5,6338.3,-0.267,False
+9,QDT_td,q0.75,7298.9,0.336,False
+9,QDT_td,q0.9,7857.2,0.601,False
+9,QDT_td,q0.95,8075.7,0.645,True
+9,QDT_td,q0.99,8542.7,0.655,False
+9,QDT_td,q1.0,8893.7,0.723,False
+9,QDT_td,max x1.25,11117.2,-0.077,False
+9,QDT_td,max x1.5,13340.6,-0.408,False
+9,QDT_td,max x2.0,17787.5,-0.45,False
+9,oracle_Qstar,q0.5,262.8,-0.525,False
+9,oracle_Qstar,q0.75,364.9,-0.126,False
+9,oracle_Qstar,q0.9,448.4,0.199,False
+9,oracle_Qstar,q0.95,476.0,0.198,True
+9,oracle_Qstar,q0.99,546.7,0.539,False
+9,oracle_Qstar,q1.0,568.3,0.544,False
+9,oracle_Qstar,max x1.25,710.4,0.615,False
+9,oracle_Qstar,max x1.5,852.5,0.592,False
+9,oracle_Qstar,max x2.0,1136.7,0.392,False
+9,vanilla,q0.5,267.9,-0.078,False
+9,vanilla,q0.75,392.8,0.249,False
+9,vanilla,q0.9,519.5,0.282,False
+9,vanilla,q0.95,596.9,0.54,True
+9,vanilla,q0.99,780.6,0.667,False
+9,vanilla,q1.0,925.4,0.678,False
+9,vanilla,max x1.25,1156.8,0.662,False
+9,vanilla,max x1.5,1388.1,0.644,False
+9,vanilla,max x2.0,1850.9,0.623,False

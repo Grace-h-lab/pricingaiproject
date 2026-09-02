@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "reproduce.py",
+    "--outroot",
+    "repro_pass3"
+  ],
+  "branch": "master",
+  "commit": "dbe37961aaf9c7d3c0083ab5b13eb2be9b677ed2",
+  "commit_short": "dbe3796",
+  "dirty_files": 85,
+  "env": {
+    "cuda_available": true,
+    "cudnn_deterministic": false,
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "scipy": "1.15.3",
+    "sklearn": "1.8.0",
+    "torch": "2.11.0+cu128"
+  },
+  "reproduces": [
+    "logger_value",
+    "context",
+    "expertq_sweep",
+    "expertq_channel",
+    "family_table"
+  ],
+  "utc": "2026-08-27T06:05:27+00:00"
+}

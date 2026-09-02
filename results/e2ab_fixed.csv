@@ -1,0 +1,51 @@
+seed,arm,nv_heldout,nv_default,chosen
+0,A_full_prior,0.516,0.607,q0.975
+0,B_no_constraints,0.617,0.663,max x1.25
+0,C_misspecified,0.622,0.622,q0.95
+0,D_bootstrap_fixed,0.666,0.673,q0.99
+0,D_bootstrap_broken,0.536,0.567,q0.9
+1,A_full_prior,0.73,0.585,q0.975
+1,B_no_constraints,0.674,0.331,max x1.25
+1,C_misspecified,0.585,0.66,q0.9
+1,D_bootstrap_fixed,0.655,0.676,q0.975
+1,D_bootstrap_broken,0.498,0.081,q0.8
+2,A_full_prior,0.671,0.671,q0.95
+2,B_no_constraints,0.426,0.412,max x1.25
+2,C_misspecified,0.679,0.647,q0.975
+2,D_bootstrap_fixed,0.655,0.395,max x1.5
+2,D_bootstrap_broken,0.393,0.293,max x1.5
+3,A_full_prior,0.755,0.755,q0.95
+3,B_no_constraints,0.368,0.368,q0.95
+3,C_misspecified,0.772,0.752,q0.975
+3,D_bootstrap_fixed,0.59,0.339,max x1.25
+3,D_bootstrap_broken,0.573,0.474,q0.925
+4,A_full_prior,0.653,0.653,q0.95
+4,B_no_constraints,0.505,0.268,max x1.25
+4,C_misspecified,0.506,0.7,q0.925
+4,D_bootstrap_fixed,0.681,0.743,q0.975
+4,D_bootstrap_broken,0.554,0.536,q0.925
+5,A_full_prior,0.784,0.628,q0.99
+5,B_no_constraints,0.565,0.443,q1.0
+5,C_misspecified,0.827,0.545,q0.975
+5,D_bootstrap_fixed,0.655,0.464,q0.975
+5,D_bootstrap_broken,0.542,0.542,q0.95
+6,A_full_prior,0.584,0.681,q0.925
+6,B_no_constraints,0.399,0.093,q1.0
+6,C_misspecified,0.682,0.682,q0.95
+6,D_bootstrap_fixed,0.717,0.549,q1.0
+6,D_bootstrap_broken,0.5,0.61,q0.9
+7,A_full_prior,0.639,0.693,q0.975
+7,B_no_constraints,0.563,0.14,max x1.25
+7,C_misspecified,0.698,0.728,q0.975
+7,D_bootstrap_fixed,0.699,0.669,q1.0
+7,D_bootstrap_broken,0.599,0.599,q0.95
+8,A_full_prior,0.693,0.693,q0.95
+8,B_no_constraints,0.527,0.231,q0.975
+8,C_misspecified,0.691,0.677,q0.99
+8,D_bootstrap_fixed,0.673,0.673,q0.95
+8,D_bootstrap_broken,0.498,0.045,q0.8
+9,A_full_prior,0.783,0.717,q0.975
+9,B_no_constraints,0.538,0.325,q1.0
+9,C_misspecified,0.784,0.755,q0.975
+9,D_bootstrap_fixed,0.656,0.663,q0.99
+9,D_bootstrap_broken,0.517,0.532,q0.925

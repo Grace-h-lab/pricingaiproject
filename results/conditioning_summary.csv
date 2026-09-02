@@ -1,0 +1,5 @@
+arm,default,best,gain,best_rule
+QDT_td,0.581,0.686,0.105,q1.0
+A_structured,0.67,0.684,0.014,q0.95
+vanilla,0.441,0.598,0.156,max x1.25
+oracle_Qstar,0.359,0.568,0.21,max x1.25

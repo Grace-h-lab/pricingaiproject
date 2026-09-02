@@ -1,0 +1,11 @@
+cell_id,N,noise,seed,config,cql_updates,cql_alpha,lr
+N100_noise0p5,100,0.5,0,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,1,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,2,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,3,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,4,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,5,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,6,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,7,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,8,fixed_cql_alpha0.1,2000,0.1,0.0003
+N100_noise0p5,100,0.5,9,fixed_cql_alpha0.1,2000,0.1,0.0003

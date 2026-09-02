@@ -1,0 +1,48 @@
+{
+  "stage": "Offline contextual-bandit baselines (the deployed paradigm)",
+  "preset": "full",
+  "cells": [
+    [
+      100,
+      0.2
+    ]
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "methods": [
+    "Bandit DM",
+    "Bandit DM support top3",
+    "Bandit IPS",
+    "Bandit IPS support top3",
+    "Bandit DR",
+    "Bandit DR support top3",
+    "Bandit oracle (myopic, true R)"
+  ],
+  "framing": "nv = 0 is the ORACLE myopic (perfect-information bandit) policy and nv = 1 is the optimal sequential policy, so these arms measure what a LEARNED bandit gives up relative to that anchor. They are a realistic alternative to compare against, not a comparator to beat.",
+  "learners": {
+    "DM": "MLP rhat(s,a) by MSE on logged (s,a,r); act argmax_a rhat",
+    "IPS": "softmax policy, self-normalised clipped IPS (CRM)",
+    "DR": "softmax policy, DM baseline + IPS residual correction"
+  },
+  "propensity": "ope.estimate_behaviour_policy (logistic on obs), the same estimator C3 uses",
+  "hyperparams": {
+    "hidden": 128,
+    "updates": 2000,
+    "lr": 0.0003,
+    "batch": 256,
+    "w_clip": 10.0,
+    "entropy_coef": 0.01
+  },
+  "not_implemented": "POEM variance regularisation (Swaminathan and Joachims 2015)",
+  "support_mask": "top3, inference-only, identical to diag_gate2_pricing"
+}

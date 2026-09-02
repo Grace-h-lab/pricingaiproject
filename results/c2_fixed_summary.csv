@@ -1,0 +1,4 @@
+N,vanillaDT,QDT_legacy,QDT_td,QDT_qsa,structuredDT,adv_vs_legacy,p_legacy,adv_vs_fixed,p_fixed,best_fixed_arm,p_fixed_holm
+100,0.441,0.438,0.581,0.604,0.67,0.231,0.002,0.066,0.0488,QDT_qsa,0.1464
+400,0.531,0.218,0.766,0.767,0.72,0.503,0.002,-0.047,0.084,QDT_qsa,0.168
+1600,0.548,0.241,0.721,0.642,0.679,0.438,0.002,-0.042,0.084,QDT_td,0.168

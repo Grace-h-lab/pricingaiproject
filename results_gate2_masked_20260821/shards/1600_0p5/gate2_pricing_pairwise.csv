@@ -1,0 +1,15 @@
+comparison,method_a,method_b,n_pairs,mean_diff_a_minus_b,median_diff_a_minus_b,wilcoxon_p,a_win_rate
+structured_minus_iql_expectile0.7_beta3,Structured DT,IQL expectile0.7 beta3,10,0.0639340300725763,0.027218603169283262,0.375,0.6
+structured_minus_iql_expectile0.7_beta3_support_top3,Structured DT,IQL expectile0.7 beta3 support top3,10,-0.23819689459885235,-0.24267883907957588,0.001953125,0.0
+structured_minus_q-dt_fixed_q_sa,Structured DT,Q-DT fixed q_sa,10,-0.06114726998298188,-0.07847919220567423,0.01953125,0.2
+structured_minus_q-dt_fixed_q_sa_support_top3,Structured DT,Q-DT fixed q_sa support top3,10,-0.21669601228792867,-0.21727921857746652,0.001953125,0.0
+structured_minus_q-dt_fixed_td_denoised,Structured DT,Q-DT fixed td denoised,10,-0.04880569053520249,-0.03802921833717687,0.048828125,0.2
+structured_minus_q-dt_fixed_td_denoised_support_top3,Structured DT,Q-DT fixed td denoised support top3,10,-0.20445378319005747,-0.21814626650165847,0.001953125,0.0
+structured_minus_structured_dt_support_countgte=1,Structured DT,Structured DT support count>=1,10,-0.050294183816703406,-0.04921714200902594,0.01953125,0.2
+structured_minus_structured_dt_support_top3,Structured DT,Structured DT support top3,10,-0.050294183816703406,-0.04921714200902594,0.01953125,0.2
+structured_minus_vanilla_dt,Structured DT,Vanilla DT,10,0.13948741475347176,0.12307450788647067,0.001953125,1.0
+structured_minus_vanilla_dt_support_top3,Structured DT,Vanilla DT support top3,10,0.14696345733690802,0.1265269352481896,0.001953125,1.0
+support_count1_minus_structured,Structured DT support count>=1,Structured DT,10,0.050294183816703406,0.04921714200902594,0.01953125,0.8
+support_top3_minus_structured,Structured DT support top3,Structured DT,10,0.050294183816703406,0.04921714200902594,0.01953125,0.8
+vanilla_support_top3_minus_vanilla,Vanilla DT support top3,Vanilla DT,10,-0.007476042583436276,-0.005550280084101772,0.0078125,0.0
+qdt_td_minus_qsa,Q-DT fixed td denoised,Q-DT fixed q_sa,10,-0.012341579447779383,0.013501878608486229,0.6953125,0.6

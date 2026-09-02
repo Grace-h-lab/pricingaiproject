@@ -1,0 +1,6 @@
+arm,heldout,sd,default_rule
+C_misspecified,0.685,0.096,0.677
+A_full_prior,0.681,0.087,0.668
+D_bootstrap_fixed,0.665,0.034,0.584
+D_bootstrap_broken,0.521,0.056,0.428
+B_no_constraints,0.518,0.097,0.327

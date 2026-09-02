@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite the dissertation."
+title: "pricing-dt: where a fitted domain model enters an offline RL pipeline"
+abstract: >-
+  Code, environments and evidence for an MSc dissertation on offline reinforcement
+  learning for repeated pricing and inventory decisions. One fitted demand model is held
+  fixed and moved between three channels, selecting actions, generating training data and
+  setting a conditioning target, and the consequences of its error are measured on two
+  exactly-solvable environments where every policy's true value is known.
+type: software
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/Grace-h-lab/pricingaiproject"
+authors:
+  - family-names: "Huang"
+    given-names: "Grace"
+    alias: "Yan HUANG"
+    affiliation: "WMG, University of Warwick"
+keywords:
+  - offline reinforcement learning
+  - decision transformer
+  - dynamic pricing
+  - reproducibility
+
+references:
+  - type: thesis
+    title: >-
+      What a Pricing Log Can Support: How Action Coverage and Off-Support Freedom Shape
+      the Reliability of Offline Pricing Methods
+    authors:
+      - family-names: "Huang"
+        given-names: "Grace"
+    thesis-type: "MSc dissertation"
+    institution:
+      name: "WMG, University of Warwick"
+    year: 2026
+    month: 9
+  - type: data
+    title: "Online Retail II"
+    authors:
+      - family-names: "Chen"
+        given-names: "Daqing"
+    doi: "10.24432/C5CG6D"
+    year: 2019
+    publisher:
+      name: "UCI Machine Learning Repository"
+    license: CC-BY-4.0
+    notes: >-
+      Not distributed with this repository. Downloaded at run time and used only for a
+      price-quantity elasticity band and aggregate descriptive statistics.

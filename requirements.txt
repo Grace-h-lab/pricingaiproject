@@ -1,0 +1,56 @@
+# Versions are those the reported runs used, recorded independently in REPRODUCE.md and in
+# the provenance.json those runs write. They are pinned because a floor is not enough for a
+# result to be reproducible: the same command against a different build of the same library
+# can return different numbers, which is one of the two limits on determinism this project
+# documents.
+#
+# One line below is a floor rather than a pin, and says why: `transformers` produced no
+# reported number, so there is no version to pin it to. Everything a reported result
+# depends on is pinned exactly.
+#
+# `pip install -e .` installs the same core set from pyproject.toml, where the optional
+# groups below are separate extras: .[test], .[realdata], .[boosting], .[llm], .[all].
+#
+# Python 3.11.9. Later minor versions should work; 3.12 has not been tested.
+
+# ── Core scientific stack: pinned exactly ──
+numpy==2.4.4
+scipy==1.15.3
+pandas==3.0.2
+scikit-learn==1.8.0
+matplotlib==3.10.8
+
+# ── Test runner ──
+# README and Appendix H.2 both open with `python -m pytest tests/ -q`, so it belongs here:
+# a fresh environment built from this file has to be able to run the first documented
+# command. (`python tests/test_smoke.py` also works, on the standard library alone.)
+pytest==9.1.1
+
+# ── PyTorch ──
+# The reported runs used 2.11.0+cu128 on an RTX 5060 Laptop GPU. The build tag is deliberately
+# left off: it pins the CUDA build and would make this file uninstallable on a CPU-only
+# machine, and every result here is reproducible on CPU, only slower. For the CUDA build see
+# https://pytorch.org/get-started/locally/ and select 2.11.0.
+torch==2.11.0
+
+# ── Real-data track (Online Retail II), optional ──
+# Needed only for the elasticity calibration of Section 3.2.1 and the descriptive checks of
+# Section 5.5. No simulator result depends on them.
+ucimlrepo==0.0.7        # downloads UCI dataset id=502
+openpyxl==3.1.5         # reads the .xlsx edition rather than the CSV export
+
+# ── Gradient-boosted comparators (Table F.4), optional ──
+# diag_bprime_xgb.py falls back to sklearn's HistGradientBoostingRegressor if xgboost is
+# absent; the other two have no fallback and their arms are simply not produced.
+xgboost==3.2.0
+lightgbm==4.6.0
+catboost==1.2.10
+
+# ── Language-model appendix (Appendix E.4), optional ──
+# Only the local-model path needs this; the hosted-API path used for the reported run does
+# not. Imported lazily, so its absence costs nothing.
+transformers>=4.40
+
+# The public-benchmark replication of Appendix F.3.1 has its own file, because it pulls a
+# much larger dependency tree and no other result needs it:
+#   pip install -r benchmark_minigrid/requirements-benchmark.txt

@@ -1,0 +1,6 @@
+severity,prior_monotone,prior_degenerate_after_clamp,mean_nv_structured,mean_nv_QDT,mean_advantage
+0.0,True,False,0.67,0.438,0.231
+0.5,True,False,0.636,0.438,0.198
+1.0,True,False,0.306,0.438,-0.133
+2.0,False,False,0.421,0.438,-0.017
+4.0,False,True,0.41,0.438,-0.028

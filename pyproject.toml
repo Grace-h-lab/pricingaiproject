@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pricing-dt"
+version = "1.0.0"
+description = "Where a fitted domain model enters an offline reinforcement learning pipeline, and what that placement costs"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Grace HUANG (Yan HUANG)" }]
+# 3.11.9 is the version every reported run used. 3.12 has not been tested; the floor is set
+# where the code is known to work rather than where it might.
+requires-python = ">=3.11,<3.13"
+keywords = ["offline reinforcement learning", "decision transformer", "dynamic pricing",
+            "reproducibility"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Pinned exactly, for the reason requirements.txt gives: the same command against a different
+# build of the same library can return different numbers, so a floor is not enough for a
+# result to be reproducible. `pip install -e .` and `pip install -r requirements.txt` install
+# the same set; requirements.txt stays because it is the command the guides document.
+dependencies = [
+    "numpy==2.4.4",
+    "scipy==1.15.3",
+    "pandas==3.0.2",
+    "scikit-learn==1.8.0",
+    "matplotlib==3.10.8",
+    "torch==2.11.0",
+]
+
+[project.optional-dependencies]
+# Needed to run the documented first command, so it is not buried under `dev`.
+test = ["pytest==9.1.1"]
+# The real-data track: the elasticity calibration and the descriptive checks. No simulator
+# result depends on it.
+realdata = ["ucimlrepo==0.0.7", "openpyxl==3.1.5"]
+# The gradient-boosted comparators. diag_bprime_xgb falls back to sklearn when xgboost is
+# absent; the other two produce no arm without theirs.
+boosting = ["xgboost==3.2.0", "lightgbm==4.6.0", "catboost==1.2.10"]
+# The local-model path of the language-model appendix, and the one dependency deliberately
+# NOT pinned. No reported run used it: the language-model arm ran against a hosted
+# DeepSeek V4 endpoint, which Appendix E.4 states cannot meet the provenance standard of
+# Appendix G.1 because hosted inference is not bit-deterministic. There is therefore no
+# version that produced a reported number, and inventing one would claim a provenance
+# this arm does not have.
+llm = ["transformers>=4.40"]
+# Everything an examiner needs to reproduce every reported number on one machine.
+all = ["pytest==9.1.1", "ucimlrepo==0.0.7", "openpyxl==3.1.5",
+       "xgboost==3.2.0", "lightgbm==4.6.0", "catboost==1.2.10", "transformers>=4.40"]
+
+[project.scripts]
+pricing-dt = "pricing_dt.cli.run:main"
+
+[project.urls]
+Repository = "https://github.com/Grace-h-lab/pricingaiproject"
+
+[tool.setuptools.packages.find]
+include = ["pricing_dt*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# tests/ inserts the repository root on sys.path itself, so the suite runs from a checkout
+# without an install; this makes the same true when the package IS installed.
+pythonpath = ["."]

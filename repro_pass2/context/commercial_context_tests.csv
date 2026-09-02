@@ -1,0 +1,5 @@
+mode,comparison,median_diff,p_value
+baseline,structuredDT_context - EtO_structured,4.975,0.001953
+baseline,structuredDT_context - vanillaDT,-0.038,0.695312
+season_product,structuredDT_context - EtO_structured,3.889,0.001953
+season_product,structuredDT_context - vanillaDT,-0.055,0.322266

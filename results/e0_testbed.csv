@@ -1,0 +1,6 @@
+check,value
+optimal_value_DP,477.655
+optimal_value_exact_rollout,482.057
+behaviour(myopic)_value,426.423
+demand_monotone_in_price,True
+optimality_gap(opt-beh),55.634
