@@ -108,10 +108,3 @@ result rather than as a caveat.
   separated after the fact. Appendix G.1 lists which batch every quoted figure comes from.
 - **The real retail data is descriptive calibration**, not causal validation. It fixes a
   plausible elasticity operating point; it does not identify counterfactual policy value.
-
-## What is not in this package
-
-The raw `online_retail_II.xlsx` (44 MB) is excluded for size; Appendix H.3 gives the DOI and
-the check that distinguishes the right edition from a widely mirrored extract. Credentials,
-caches, run logs, smoke outputs and superseded result batches are excluded; no number in the
-dissertation traces to any of them.
